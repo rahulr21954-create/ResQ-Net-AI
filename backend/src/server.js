@@ -16,7 +16,7 @@ const server=createServer(app);
 
 export const io= new Server(server,{
     cors:{
-        origin: ["http://localhost:5173",`${import.meta.env.VITE_API_URL}`],
+        origin: ["http://localhost:5173","https://resq-net-ai.onrender.com"],
         methods: ["GET", "POST"],
         credentials: true,
     }
