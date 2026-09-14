@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:8000/api/police";
+const API = `http://localhost:${process.env.PORT}/api/police`;
 
 export const getNearbyPolice = async (lat, lon) => {
   const res = await axios.get(
