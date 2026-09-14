@@ -15,7 +15,11 @@ import floodPredictionRoutes from "./routes/floodPredictionRoutes.js";
 const app=express();
 
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: [
+  "http://localhost:5173",
+  "https://res-q-net-ai-eta.vercel.app"
+]
+,
     credentials:true,
 
 }))
